@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -46,9 +47,11 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
 
         TextView name = view.findViewById(R.id.name);
         TextView job = view.findViewById(R.id.job);
+        ImageView imgV = view.findViewById(R.id.image);
 
         name.setText(employees.get(position).getName());
         job.setText(employees.get(position).getJob());
+        imgV.setImageResource(employees.get(position).getImage());
 
 
         return view;

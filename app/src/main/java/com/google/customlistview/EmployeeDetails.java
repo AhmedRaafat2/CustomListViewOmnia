@@ -36,6 +36,9 @@ public class EmployeeDetails  extends AppCompatActivity {
         Intent intent = getIntent();
         employee = (Employee) intent.getSerializableExtra("employee");
 
+        //another way to not make intent object........
+        //employee = (Employee)getIntent().getSerializableExtra("employee");
+
         name.setText(employee.getName().toString());
         id.setText(employee.getId().toString());
         adress.setText(employee.getAddress().toString());
