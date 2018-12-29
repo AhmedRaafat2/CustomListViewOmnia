@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CustomListView</string>
+    <string name="title">Employee details</string>
+    <string name="name">name</string>
+    <string name="id">id</string>
+    <string name="adress">adress</string>
+    <string name="salary">salary</string>
+    <string name="job">job</string>
+
+
 </resources>

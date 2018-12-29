@@ -1,15 +1,17 @@
 package com.google.customlistview;
 
-public class Employee {
+import java.io.Serializable;
 
-    private int id;
+public class Employee implements Serializable {
+
+    private String id;
     private String name;
     private String address;
-    private double salary;
+    private String salary;
     private String job;
     private int image;
 
-    public Employee(int id, String name, String address, double salary, String job, int image) {
+    public Employee(String id, String name, String address, String salary, String job, int image) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -24,11 +26,11 @@ public class Employee {
         this.image = image;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -48,11 +50,11 @@ public class Employee {
         this.address = address;
     }
 
-    public double getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
     }
 
